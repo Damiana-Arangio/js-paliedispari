@@ -18,12 +18,16 @@
   // Scelta utente -> numero
     const numUtente = parseInt(prompt("Scegli un intero tra 1 e 5"));
 
-// Generazione numero random per computer
-const numComputer = Math.floor(Math.random() * 5) +1;
 
-// Chiamata funzione per verifica somma pari/dispari
-const sommaIsPari = sommaPariDispari(numUtente, numComputer);
-console.log("Somma is pari: ", sommaIsPari);
+// ELABORAZIONE
+
+  // Generazione numero random per computer
+  const numComputer = Math.floor(Math.random() * 5) +1;
+
+  // Chiamata funzione per verifica somma pari/dispari
+  const sommaIsPari = sommaPariDispari(numUtente, numComputer);
+  console.log("Somma is pari: ", sommaIsPari);
+
 
 // OUTPUT: vincitore
 if ( (sommaIsPari && sceltaPariDispariUtente === "pari") || 
@@ -34,9 +38,6 @@ if ( (sommaIsPari && sceltaPariDispariUtente === "pari") ||
 else {
   console.log("Hai perso!");
 }
-
-
-
 
 
 // FUNZIONE
